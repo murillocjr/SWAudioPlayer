@@ -16,8 +16,6 @@ import com.stonewall.swaudioplayer.SWAudioPlayer
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        var player = SWAudioPlayer()
-
         super.onCreate(savedInstanceState)
         setContent {
             SWAudioPlayerExampleTheme {
@@ -26,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting(player.fromLibrary())
+                    SWAudioPlayer()
                 }
             }
         }

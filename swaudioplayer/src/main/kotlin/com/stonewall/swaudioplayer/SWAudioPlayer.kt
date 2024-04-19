@@ -3,8 +3,13 @@
  */
 package com.stonewall.swaudioplayer
 
-public class SWAudioPlayer {
-    public fun fromLibrary(): String {
-        return "From Library 2"
-    }
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+
+@Composable
+public fun SWAudioPlayer() {
+    Text(
+        text = "Hello From Library 3")
 }
+
+
