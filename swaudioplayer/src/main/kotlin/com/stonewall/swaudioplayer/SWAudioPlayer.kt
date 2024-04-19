@@ -5,6 +5,6 @@ package com.stonewall.swaudioplayer
 
 public class SWAudioPlayer {
     public fun fromLibrary(): String {
-        return "From Library"
+        return "From Library 2"
     }
 }
