@@ -15,3 +15,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "SWAudioPlayerExample"
 include(":app")
+
+includeBuild("../swaudioplayer") {
+    dependencySubstitution {
+        substitute(module("com.stonewall:swaudioplayer"))
+    }
+}

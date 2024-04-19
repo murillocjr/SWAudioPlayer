@@ -12,8 +12,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.stonewall.swaudioplayerexample.ui.theme.SWAudioPlayerExampleTheme
 
+import com.stonewall.swaudioplayer.SWAudioPlayer
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        var player = SWAudioPlayer()
+
         super.onCreate(savedInstanceState)
         setContent {
             SWAudioPlayerExampleTheme {
@@ -22,7 +26,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    Greeting(player.fromLibrary())
                 }
             }
         }

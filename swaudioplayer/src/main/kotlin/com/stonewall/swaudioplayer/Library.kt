@@ -3,8 +3,8 @@
  */
 package com.stonewall.swaudioplayer
 
-class Library {
-    fun someLibraryMethod(): Boolean {
-        return true
+public class SWAudioPlayer {
+    public fun fromLibrary(): String {
+        return "From Library"
     }
 }
