@@ -13,6 +13,8 @@ plugins {
     `java-library`
 }
 
+group = "com.stonewall"
+
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
